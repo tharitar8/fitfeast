@@ -1,4 +1,4 @@
-**FitFeast**
+## FitFeast
 FitFeast is a health and nutrition web application that helps users track their macronutrient intake for a single meal, suggesting recipes based on the user's dietary preference.
 
 **Overview
