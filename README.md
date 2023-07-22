@@ -3,7 +3,11 @@ FitFeast is a health and nutrition web application that helps users track their 
 
 #Overview
 FitFeast provides users with a simple and intuitive interface to input food items consumed during a meal. It calculates and presents the total macronutrient content - proteins, fats, and carbs - from the meal. Users can also select their diet preferences, and the app suggests suitable recipes for their next meal, supporting a diverse range of diets like vegan, paleo, ketogenic, etc.
+
+
 #ERD
+
+
 ![Database ER diagram example (crow's foot) (1)](https://github.com/tharitar8/fitfeast/assets/86535497/7a62be73-d618-46d2-a0c4-a32053042247)
 
 #Features
