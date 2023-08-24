@@ -20,56 +20,25 @@ const Header = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentIndex((prevIndex) => (prevIndex + 1) % quotes.length)
-		}, 1570) // Change every 5 seconds
+		}, 5000) // Change every 5 seconds
 
 		return () => clearInterval(interval)
 	}, [])
 
 	return (
-		<div style={{ marginTop: '-50px' }}>
-			<div style={{ position: 'relative', height: '600px' }}>
-				<Container className='d-flex justify-content-center'>
-					<a href='/'>
-						<img
-							src={Logo}
-							alt='FitFeast Logo'
-							style={{
-								maxWidth: '300px',
-								minWidth: '500px',
-								width: '20vw',
-								zIndex: 2,
-							}}
-						/>
-					</a>
-					{/* Slogan carousel */}
-					<div
-						className='carousel'
-						style={{ zIndex: 1, position: 'absolute', bottom: '10%' }}>
-						<div className='carousel-inner'>
-							<div className='quote'>{quotes[currentIndex]}</div>
-						</div>
-					</div>
+		<div className='header-container'>
 
-					{/* Video */}
-					<video
-						className='video-background'
-						autoPlay
-						loop
-						muted
-						style={{
-							position: 'absolute',
-							top: 0,
-							left: 0,
-							width: '100%',
-							height: '80%',
-							objectFit: 'cover',
-							opacity: 0.7,
-							zIndex: -1,
-						}}>
-						<source src={Background} type='video/mp4' />
-					</video>
-				</Container>
-			</div>
+			<video className='video-background' autoPlay loop muted playsInline>
+				<source src={Background} type='video/mp4' />
+			</video>
+			<Container className='d-flex flex-column align-items-center justify-content-center'>
+				<a href='/'>
+					<img src={Logo} alt='FitFeast Logo' className='logo' />
+				</a>
+				<div className='quote-carousel'>
+					<div className='quote'>{quotes[currentIndex]}</div>
+				</div>
+			</Container>
 		</div>
 	)
 }
