@@ -1,0 +1,42 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -100px;
+	font-family: 'Spicy Kebab', sans-serif;
+}
+
+h1,
+h5 {
+	text-align: center;
+}
+h5 {
+	margin-bottom: 30px;
+}
+
+.input-box1 {
+	margin-bottom: 30px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.input-box {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 60%;
+	text-align: center;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe-item {
+    width: calc(33.33% - 10px); /* Adjust as needed */
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}

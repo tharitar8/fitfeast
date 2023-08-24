@@ -1,17 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { FitFeastBanner } from './Components/FitFeastBanner'
 import MacrosCalculator from './Components/MacrosCalculator'
-import Recipe from './Components/Recipe'
-import NavBar from './Components/NavBar'
+import Header from './Components/Header'
 
 const App = () => (
 	<div className='App'>
-		<NavBar />
-		<FitFeastBanner />
+		<Header />
 		<MacrosCalculator />
-		<Recipe />
 	</div>
 )
+
 
 export default App

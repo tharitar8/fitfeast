@@ -1,0 +1,25 @@
+.carousel {
+	font-family: 'NeoBulletin Trash', sans-serif;
+
+	width: 100%;
+	overflow: hidden;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+.carousel-inner {
+	width: 50%;
+	text-align: center;
+	margin-top: -50px;
+}
+
+.quote {
+	text-shadow: 2px 2px 4px rgb(255, 255, 255);
+	padding: 10px 30px;
+	white-space: nowrap;
+	font-size: 2em;
+	font-weight: bold;
+}
