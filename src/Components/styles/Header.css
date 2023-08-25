@@ -43,3 +43,11 @@
 	font-size: 2em;
 	font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .header-container {
+        object-fit: contain; /* Adjust to your preference */
+        width: 100%;
+        height: auto;
+    }
+}
